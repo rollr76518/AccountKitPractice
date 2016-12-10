@@ -1,0 +1,6 @@
+framework module Pods_AccountKitPractice {
+  umbrella header "Pods-AccountKitPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5b-dk-PbB">
+                                <color key="backgroundColor" red="1" green="0.48627450979999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="PhoneLogin"/>
+                                <connections>
+                                    <action selector="loginWithPhone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7th-rR-SFz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-t3-buw">
+                                <color key="backgroundColor" red="1" green="0.89512891059999999" blue="0.192453027" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="EmailLogin"/>
+                                <connections>
+                                    <action selector="loginWithEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8c-F8-Otp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TokenString" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urt-UF-et0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F5b-dk-PbB" firstAttribute="width" secondItem="NWd-t3-buw" secondAttribute="width" id="2Ab-mD-Hsh"/>
+                            <constraint firstItem="F5b-dk-PbB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ItN-e3-NHp"/>
+                            <constraint firstItem="NWd-t3-buw" firstAttribute="leading" secondItem="F5b-dk-PbB" secondAttribute="trailing" constant="63" id="MLg-EE-ZU5"/>
+                            <constraint firstItem="NWd-t3-buw" firstAttribute="top" secondItem="Urt-UF-et0" secondAttribute="bottom" constant="44" id="kan-e2-tI7"/>
+                            <constraint firstItem="Urt-UF-et0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uyh-AN-3yR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NWd-t3-buw" secondAttribute="trailing" constant="10" id="w2E-PA-7fi"/>
+                            <constraint firstItem="NWd-t3-buw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x78-ZX-icI"/>
+                            <constraint firstItem="F5b-dk-PbB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="zOn-8T-lqI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelTokenString" destination="Urt-UF-et0" id="RFb-ui-NfQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
